@@ -1,14 +1,24 @@
 sudo: false
-language: node_js  
-node_js:  
-  - "node"
-branches: 
+language: node_js
+node_js:
+- node
+branches:
   only:
-    - master
+  - master
 cache:
   directory:
-    - node_modules
+  - node_modules
 before_install:
-  - npm update
+- npm update
 after_install:
-  - npm_install
+- npm_install
+deploy:
+  provider: elasticbeanstalk
+  region: "us-east-2"  
+  app: "cmdapitest"
+  env: "Cmdapitest-env"
+  bucket_name: "mybucket"
+env:
+  global:
+  - secure: bto5/q8a/1e0JksnTgQUqnAR0mwsHcGMrApMCPf0gJhPuqxDGCy1+Q2lSSEUpYee8a1pLCstkralpM5/KuPh5KdFpAK+qNDCn+FUuWGFNJwB4k6bP07jR053dHAxqFsoEFzY+RfSZnMApA/lidRjD1+eIrT/eb/b+NinP6g+BokGZRnd/FvPeuAWB0fuUTUEh/QiJrhyl6X3Yno1CZ6Z6kmYXQUjOPT9lPI3/pefBcoEeWM6U07gUNyrwjLryos2qI38WK1QUlzvm3nTLh+YNkEef+q1XwcM0gQLhQATiTMtJXYd30kkZgjQo5cq18KnLkWDq9eih8rQ+eumaNQyWKwQMev8oWc1OwaVPbDtqUxNn6sCp9+TUimT+nQyO4XuDkgDQkjxNIBW9VeVdxHCEqSEU1u2qQFPF6lhiOOWLCVoFF03OQCHyWDjZcH2xisEK9vBlauDQL3uLyOTf8yxHDGhKcK+hRWM1/HTGyZO912ev4hUTmX2KEdQCNtObih+5gU8MhIm20HHI1oTOZtKEYCtVTph3+dgVkmvHSfJo2rN9DkNtG6P0b2oP1lvRT9vwj4Y/ehdKKbn9fMsd21oC1IUc0otqpaV/IEXNRei7c7DmlDSU8KRuDj9hOBdSZpvLMBJJeF8yZTLZkkJ0ov8rtH8UIkcObfZwOX8B07zt+U=
+  - secure: lpzMUGD6Gfr1p8HygNCqjUVsJTA1OPPUeQg4dRg9EI+NH2yFdnYlSfOLfSFQyq0OaSue6llDkhP7OYLgeo2bNiJDoOZA6DqAdjMHVaJddG9vNoQTfb6p8cYDZDDLYcsA5kkAbdQe4iTP1V/wusUJhdfAnIxMBrjyLHaJkVy+LOvOV22U8Y6R+DqJvLII2y0poJ8QgsaiANwBQzQCA4+lXOWxlJXHY2KJCN1Z+Xr/ZB2VKy53t7Z3tThUBPMypR1zxANKatxkEsK2h9iaDoKsAslJRZEj3gpwI0XV3jSBsKBjaVbTW5KRzjpUnXfaXrHrNy+UhevimHcSQh2tUOLobPFCm4HTWznxYWWJ/ZOPxv8PYGjJct5b/mh/Phjdc/ZrWB8dmwbQyIF5SMmUKu2C/GOB+LS3oGWyVOVjEE1KkEjtGBRjEE+LGPnsnFlvy5JI+PM07JXyXT7N7ajF4sX63pg+SFajStORc9d1bPQnbVn9RUgAyq3mDHNvgeeyoJnLy1+nQ6aaZb40QnzSv65LgDa210CvEwlAluh5UI78W8J4evbhnw/AV9u54hghPVZlWxhvunhryV53sZCf7heAYBj6Esz6/jSfQ95g651uMOJOcq//++v/gm7ZvTyYjmFGyopXsay6Jda7Qlny2jO6pz1HWTvU3IVDW+JXSyj6adw=
