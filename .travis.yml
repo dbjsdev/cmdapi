@@ -17,7 +17,7 @@ deploy:
   region: "us-east-2"  
   app: "cmdapitest"
   env: "Cmdapitest-env"
-  bucket_name: "mybucket"
+  bucket_name: "elasticbeanstalk-us-east-2-436880752620"
 env:
   global:
   - secure: bto5/q8a/1e0JksnTgQUqnAR0mwsHcGMrApMCPf0gJhPuqxDGCy1+Q2lSSEUpYee8a1pLCstkralpM5/KuPh5KdFpAK+qNDCn+FUuWGFNJwB4k6bP07jR053dHAxqFsoEFzY+RfSZnMApA/lidRjD1+eIrT/eb/b+NinP6g+BokGZRnd/FvPeuAWB0fuUTUEh/QiJrhyl6X3Yno1CZ6Z6kmYXQUjOPT9lPI3/pefBcoEeWM6U07gUNyrwjLryos2qI38WK1QUlzvm3nTLh+YNkEef+q1XwcM0gQLhQATiTMtJXYd30kkZgjQo5cq18KnLkWDq9eih8rQ+eumaNQyWKwQMev8oWc1OwaVPbDtqUxNn6sCp9+TUimT+nQyO4XuDkgDQkjxNIBW9VeVdxHCEqSEU1u2qQFPF6lhiOOWLCVoFF03OQCHyWDjZcH2xisEK9vBlauDQL3uLyOTf8yxHDGhKcK+hRWM1/HTGyZO912ev4hUTmX2KEdQCNtObih+5gU8MhIm20HHI1oTOZtKEYCtVTph3+dgVkmvHSfJo2rN9DkNtG6P0b2oP1lvRT9vwj4Y/ehdKKbn9fMsd21oC1IUc0otqpaV/IEXNRei7c7DmlDSU8KRuDj9hOBdSZpvLMBJJeF8yZTLZkkJ0ov8rtH8UIkcObfZwOX8B07zt+U=
